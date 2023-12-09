@@ -65,10 +65,6 @@ public class MainActivity extends AppCompatActivity {
         spinnerFrom.setAdapter(adapter);
         spinnerTo.setAdapter(adapter);
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://jsonplaceholder.typicode.com")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
         buttonSubmit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
